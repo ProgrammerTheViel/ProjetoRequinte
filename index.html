@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requinte Dos Doces</title>
+
+    <!-- link do SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="images/logo.jpeg" alt=""></a>
+            <h1 class="logoName">Requinte Dos Doces</h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="#product">Produtos</a>
+            <a href="#blogs">Sobre Nós</a>
+            <a href="#review">Avaliações</a>
+            <a href="#footer">Contato</a>
+        </nav>
+
+        <div class="icon">
+            <i class="" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
+    </header>
+
+<!-- carousel -->
+  
+    <div class="slider">
+        <div class="slides">
+            <!-- Radio buttons -->
+             <input type="radio" name="radio-btn" id="radio1">
+             <input type="radio" name="radio-btn" id="radio2">
+             <input type="radio" name="radio-btn" id="radio3">
+             <!-- fim radio -->
+
+             <!-- slides -->
+              <div class="slide first">
+                <img src="images/back3.jpg" alt="Imagem 1">
+              </div>
+              <div class="slide">
+                <img src="images/back4.jpg" alt="Imagem 2">
+              </div>
+              <div class="slide">
+                <img src="images/back5.jpg" alt="Imagem 3">
+              </div>
+              <!-- fim slides -->
+
+              <!-- navigation auto -->
+               <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+               </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+
+
+
+    <!-- fim carousel -->
+
+
+    <!-- <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Venha para o Requinte Dos Doces!</h2>
+            <p>Os Melhores Doces e Salgados da Região!</p>
+            <div class="home-btn">
+                <a href="#"><button>Veja Mais</button></a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- produtos -->
+
+    <section class="product" id="product">
+        <div class="heading">
+            <h2>Produtos mais vendidos!</h2>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce1.jpeg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Coxinha Doce</h3>
+                        <p>Massa leve e um recheio de um morango fresco envolto em creme</p>
+                        <div class="orderNow">
+                            <button onclick="window.open('https://wa.me/5517991051076', '_blank')">Peça Agora!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce2.jpeg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Rocambole</h3>
+                        <p>Massa macia e recheio cremoso, enrolado com perfeição</p>
+                        <div class="orderNow">
+                            <button onclick="window.open('https://wa.me/5517991051076', '_blank')">Peça Agora!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce3.jpeg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bolo Red Velvet</h3>
+                        <p>Massa macia e vermelha, com leve sabor de cacau e cobertura cremosa de cream cheese.</p>
+                        <div class="orderNow">
+                            <button onclick="window.open('https://wa.me/5517991051076', '_blank')">Peça Agora!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce4.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Sonho</h3>
+                        <p>Macio e leve, com opções irresistíveis de doce de leite, creme e nutella</p>
+                        <div class="orderNow">
+                            <button onclick="window.open('https://wa.me/5517991051076', '_blank')">Peça Agora!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce7.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3 style="font-size: 3.9rem;">Bolo de Chocolate</h3>
+                        <p>Massa fofa e úmida, recheio cremoso e o toque agridoce das cerejas.</p>
+                        <div class="orderNow">
+                            <button onclick="window.open('https://wa.me/5517991051076', '_blank')">Peça Agora!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="product" id="product">
+        <div class="heading">
+
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce5.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Carolina</h3>
+                        <p>Leve e crocante por fora, com recheio cremoso de chocolate por dentro</p>
+                        <div class="orderNow">
+                            <button onclick="window.open('https://wa.me/5517991051076', '_blank')">Peça Agora!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce6.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Lua de Mel</h3>
+                        <p>Macio e fofinho, com recheio doce e cremoso que derrete na boca</p>
+                        <div class="orderNow">
+                            <button onclick="window.open('https://wa.me/5517991051076', '_blank')">Peça Agora!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/salgado1.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Coxinha</h3>
+                        <p>Crocante por fora e suculenta por dentro, disponível nos sabores frango ou carne</p>
+                        <div class="orderNow">
+                            <button onclick="window.open('https://wa.me/5517991051076', '_blank')">Peça Agora!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/salgado2.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Burrito</h3>
+                        <p>Recheado com ingredientes frescos e saborosos, envoltos em uma massa macia</p>
+                        <div class="orderNow">
+                            <button onclick="window.open('https://wa.me/5517991051076', '_blank')">Peça Agora!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce8.jpg" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cookie Recheado</h3>
+                        <p>Macio por fora e cremoso por dentro, com recheio de chocolate irresistível</p>
+                        <div class="orderNow">
+                            <button onclick="window.open('https://wa.me/5517991051076', '_blank')">Peça Agora!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+        <div class="heading">
+            <h2>Quem somos nós</h2>
+        </div>
+        <div class="swiper blogs-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce3.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Quem somos nós</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officia voluptas eaque,
+                            nobis odio earum.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="#sobre" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce2.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Quem somos nós</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officia voluptas eaque,
+                            nobis odio earum.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="#sobre" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/doce5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Quem somos nós</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis officia voluptas eaque,
+                            nobis odio earum.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <a href="#sobre" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <form action="">
+            <h3>as melhores guloseimas só aqui!</h3>
+        </form>
+    </section>
+
+    <section class="review" id="review">
+
+        <div class="heading">
+            <h2>Avaliações</h2>
+        </div>
+        <div class="swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, perspiciatis.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/doce1.jpeg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>André</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, perspiciatis.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/doce1.jpeg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>André</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, perspiciatis.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/doce1.jpeg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>André</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, perspiciatis.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/doce1.jpeg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>André</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, perspiciatis.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/doce1.jpeg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>André</h3>
+                            <p>UI / UX designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer" id="footer">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href=""><img src="images/logo2.jpg" alt=""></a>
+                    <h1 class="logoName"> Requinte Dos Doces</h1>
+                </div>
+
+                <p>Transformando açúcar em arte!</p>
+
+            </div>
+            <div class="box">
+                <h3>Link Rápido</h3>
+                <a href=""><i class="fas fa-arrow-right"></i>Menu Principal</a>
+                <a href="#product"><i class="fas fa-arrow-right"></i>Produtos</a>
+                <a href="#blogs"><i class="fas fa-arrow-right"></i>Sobre Nós</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i>Avaliações</a>
+                <a href="#footer"><i class="fas fa-arrow-right"></i>Contato</a>
+            </div>
+
+            <div class="box">
+                
+            </div>
+            <div class="box">
+                <h3>Info. Contato</h3>
+                <a href="https://wa.me/5517991051076"><i class="fas fa-arrow-right"></i>17 99105-1076</a>
+                <a><i class="fas fa-arrow-right"></i>tatianecardozo9@gmail.com</a>
+            </div>
+        </div>
+            <div class="share">
+                <a href="https://www.facebook.com/share/1HAB9AVxiw/" class="fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/requintedosdocestatianecardozo?igsh=MTY3eW9qaTl0MTA0bA==" class="fab fa-instagram"></a>
+                <a href="https://wa.me/5517991051076" class="fab fa-whatsapp"></a>
+            </div>
+            <div class="credit">
+                desenvolvido por <span>Guilherme Viel, Isabela Fortunato & Vitória Magri</span> | todos os direitos reservados
+            </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script> -->
+
+    <!-- link do javascript -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
